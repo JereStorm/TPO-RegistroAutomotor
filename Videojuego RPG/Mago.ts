@@ -22,7 +22,9 @@ export class Mago extends Personaje {
 
     public defender(): void {
         super.defender();
-        if (this.escudo) console.log(`Se uso el escudo, no se sufrieron daños`);
-        this.puntosDeVida--;
+        if (this.escudo) console.log(`Se uso el escudo, no se sufrieron daños`); {
+            this.puntosDeVida--;
+            this.escudo = false;
+        }
     }
 }
